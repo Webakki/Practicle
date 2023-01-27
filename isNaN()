@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaN()</title>
+</head>
+<body>
+  
+    <h2>isNaN() Method</h2>
+
+    <p>isNaN() returns true if a value is NaN:</p>
+    <p id="demo"></p>
+ 
+    <script>
+     let result =
+    "Is 0/0 NaN? " +isNaN(0/0) + "<br>" +
+    "Is ' ' NaN? " +isNaN(' ') + "<br>" +
+    "Is A NaN? " +isNaN('A') + "<br>" +
+    "Is true NaN? " +isNaN(true) + "<br>" +
+    "Is flase NaN? " + isNaN(false);
+
+    document.getElementById("demo").innerHTML = result;
+
+    </script>
+    
+</body>
+</html>
