@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Object Property</h2>
+
+    <p>you can delete object properties with the delete keyword.</p>
+
+    <p id="demo"></p>
+    <script>
+        var person = {
+            firstname: "Aakash",
+            lastname: "Sathwara",
+            age:23,
+            Eyecolor : "Brown"
+        };
+
+        delete person.Eyecolor;
+        document.getElementById("demo").innerHTML = 
+        person.firstname  + person.lastname + " is " + person.age + "Years Old." + " And his eye color is "+ person.Eyecolor + "." ;
+    </script>
+</body>
+</html>
