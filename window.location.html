@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Orignal page</h3> <br>
+    <button onclick="force_load_gfg()">
+    force load gfg page
+    </button>
+    <br> <br> <br>
+
+     <button onclick="force_load_local()">
+    force load local HTML page
+</button>
+
+    <script>
+        function force_load_gfg(){
+            window.location = "https://www.starbucks.com/"
+
+        }
+
+        function force_load_local(){
+            window.location = "F:/gfg/PageRedirect/newPage.html"
+        }
+
+    </script>
+  
+</body>
+</html>
