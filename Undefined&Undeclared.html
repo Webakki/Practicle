@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .result
+        {
+            font-size: 18px;
+            font-weight: 500;
+            color:darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Undefined & Undeclared</h1>
+    <div class="result"></div>
+    <div class="result"></div>
+    <button class="Btn">Click Here!</button>
+    <h3>Click on the acove buttton to access undefined & Undeclared variable</h3>
+
+    <script>
+
+        let BtnEle = document.querySelector(".Btn");
+        let resEle = document.querySelectorAll(".result");
+        let a;
+
+        BtnEle.addEventListener("click", () => {
+            resEle[0].innerHTML += "Accessing Undefined Variable = " + a;
+            try {
+                resEle[1].innerHTML = b;
+            }
+            catch (err) {
+                resEle[1].innerHTML = "Accessing Undeclared Varible = " + err;
+            }
+        });
+     </script>
+</body>
+</html>
